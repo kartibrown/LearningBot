@@ -27,6 +27,7 @@ public class Bot {
 	}
 
 	public void answer(String userInput) {
+		userInput = userInput.replaceAll("[!-?]", "");
 		try {
 			BufferedReader reader = parent.createReader("bot.txt");
 
@@ -63,6 +64,7 @@ public class Bot {
 	public void learn(String userInput) {
 		userInput = userInput.replaceAll("Learn ", "|");
 		userInput = userInput.replaceAll("Answer ", "|");
+		userInput = userInput.replaceAll("[!-?]", "");
 
 		try {
 			PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(f, true)));
