@@ -9,6 +9,3 @@ To make the bot learn:
 Learn Do you like github? Answer Yes, very much!
 
 and the bot will answer "Yes, very much!" if you say "Do you like github?".
-
-bot.txt format example:
-|Do you like github? |Yes, very much!
